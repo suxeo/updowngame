@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}  /*이 코드 글꼴 변경*/
+body {
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cafe24Ssurround';
+    background-image:url(image/산리오.jpg);
+}
+
+  
+  
+  .container {
+    border: 10px solid white;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(247, 243, 242, 0.7);
+  }
+  
+  
+  .border-line {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .button-style {
+    height: 80px;
+    width: 100px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  .pre-title {
+    font-size: 5vw;
+    font-weight: bold;
+    color: #FF5675;
+  }
+  .title {
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  .sub-title {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+  
+  .main-img {
+    width: 20vw;
+    height: 20vh
+  }
+  
+  .green-text {
+    color:#00ff00;
+  }
+  
+  .form-control {
+    height: 80px;
+  
+    font-size: 3vw;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    body{
+        height: 150vh;
+    }
+    .pre-title {
+      font-size: 10vw;
+    }
+    .title {
+      font-size: 12vw;
+    }
+    .sub-title {
+      font-size: 11vw;
+    }
+    .form-control {
+      font-size: 8vw;
+      max-width: 500px;
+      margin-right: 0px;
+    }
+    .main-img {
+      width: 40vw;
+    }
+    .button-style{
+      font-size: 4vw;
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;
+    }
+    .button-reset {
+      font-size: 4vw;
+      width: 70px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+  }
+

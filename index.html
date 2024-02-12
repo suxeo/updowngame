@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet" >  <!--폰트를 위한 코드-->
+    <script src="https://kit.fontawesome.com/d9d9614d8e.js" crossorigin="anonymous"></script> <!--fontawesome 출처-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> <!--부트스트랩 css출처-->
+    <link rel="stylesheet" href="style.css"><!--나의 css출처-->
 </head>
 <body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">결과가 나온다</div>
-    <div id="chance-area">남은 횟수:5번</div> <!--첫화면-->
-    <input type="number" id="user-input"/>
-    <button id="play-button">Go!</button>
-    <button id="reset-button">리셋!</button>
+    <div class="container">
+        <h1 class="pre-title">My melody's MT</h1>
+        <h1 class="title">Sanrio Game</h1>
+        <h1 class="sub-title"><span class="green-text">행운</span>의 UP & Down</h1>
+        
+        <div id="result-area">  <!--결과부분-->
+            <img src="image/산리오result.gif" class="main-img"> <!--움짤사진-->
+            <h1 class="result-text">떠오르는 숫자를 눌러봐!</h1>
+        </div>
+
+        <h2 id="chance-area">남은 기회 : 5번</h2> <!--첫화면-->
+       
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <input type="number" id="user-input" class="form-control mb-10" placeholder="1부터 100까지 숫자를 입력"/>
+            </div>       
+            <div class="col-md-2"> 
+                <button class="btn btn-success mb-4 button-style" id="play-button">Go!</button>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-warning mt-4 button-style button-reset" id="reset-button">리셋!</button>
+    
     <script src="main.js"></script>
 </body>
 </html>
